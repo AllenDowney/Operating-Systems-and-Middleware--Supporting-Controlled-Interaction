@@ -21,7 +21,7 @@
 %%
 \fancytitlepagefalse
 %%
-\documentclass[11pt]{book}
+\documentclass[10pt]{book}
 \usepackage{alltt}
 \usepackage{enumitem}
 \usepackage{tikz}
@@ -56,7 +56,7 @@
 \title{Operating Systems and Middleware:\\Supporting Controlled Interaction}
 \author{Max Hailperin\\Gustavus Adolphus College}
 %% For version numbering convention, see https://gustavus.edu/+max/os-book/version-numbering.html
-\date{Revised Edition 1.1.2\\\today}
+\date{Olin College Edition\\Abridged by Allen Downey\\Based on Edition 1.1.2\\\today}
 \makeindex
 \begin{document}
 \bibliographystyle{plain}
@@ -85,6 +85,9 @@
 
 \clearpage\thispagestyle{empty}
 \noindent Copyright \copyright\ 2011 by Max Hailperin.
+
+\noindent Abridgement copyright \copyright\ 2012 by Allen Downey.
+
 \[\includegraphics{by-sa}\]
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this
 license, visit
@@ -101,9 +104,6 @@ Operating systems and middleware provide a conducive environment for application
 
 The photo is by Rhys Davenport, who released it under a \href{http://creativecommons.org/licenses/by/2.0/deed.en}{Creative Commons Attribution 2.0 Generic license}. The photo is available on the web at \textit{\url{http://www.flickr.com/photos/33122834@N06/3437495101/}}.
 \fi
-
-\cleardoublepage\thispagestyle{empty}
-\vspace*{10em}\centerline{To my family}
 
 \tableofcontents
 
@@ -128,7 +128,7 @@ The photo is by Rhys Davenport, who released it under a \href{http://creativecom
 \let\endchapterEnumerate =\endlist
 \makeatother
 
-\include{preface}
+%\include{preface}
 
 \mainmatter
 
@@ -136,7 +136,7 @@ The photo is by Rhys Davenport, who released it under a \href{http://creativecom
 \include{threads}
 \include{scheduling}
 \include{synchronization}
-\include{transactions}
+%\include{transactions}
 \include{vm}
 \include{processes}
 \include{persistence}
@@ -144,13 +144,13 @@ The photo is by Rhys Davenport, who released it under a \href{http://creativecom
 \include{distmid}
 \include{security}
 
-\appendix
-\include{stacks}
+%\appendix
+%\include{stacks}
 
 \backmatter
 %\pagenumbering[Bib]{bychapter}
-\bibliography{os-book}
-\cleardoublepage
+%\bibliography{os-book}
+%\cleardoublepage
 %\pagenumbering[Idx]{bychapter}
 \printindex
 \end{document}
